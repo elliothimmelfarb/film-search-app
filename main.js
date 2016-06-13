@@ -4,7 +4,8 @@ $(document).ready(init);
 
 function init() {
   $('.searchButton').click(search);
-  $('.displayArea').on('click', '.resultCard', getInfo)
+  $('.displayArea').on('click', '.resultCard', getInfo);
+  $('.infoModal').modal();
 }
 
 function search() {
