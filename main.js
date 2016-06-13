@@ -53,7 +53,7 @@ function displaySearchResults(data) {
     $resultCard.find('.title').text(result.Title);
     $resultCard.find('.year').text(`Year: ${result.Year}`);
     $resultCard.find('.type').text(`Type: ${result.Type}`);
-    $resultCard.data('infoRequest', `http://www.omdbapi.com/?t=${result.Title}&plot=full&tomatoes=true`);
+    $resultCard.data('infoRequest', `http://www.omdbapi.com/?t=${result.Title}&tomatoes=true`);
     return $resultCard;
   });
   $('.displayArea').empty().append($resultCards);
@@ -102,9 +102,9 @@ function displayInfoResults(data) {
   $modal.find('.runtime').text(data.Runtime);
   $modal.find('.production').text(data.Production);
   $modal.find('.imdbScore').text(data.imdbRating);
-  $modal.find('.metaScore').text(data.MetaScore);
   $modal.find('.reviewDiv').find('.tomatoesScore').text(data.tomatoRating);
-  console.log(data.tomatoRating)
+  $modal.find('.metaScore').text(data.MetaScore);
+  debugger;
 
   $('.modal-content').append($modal);
 }
