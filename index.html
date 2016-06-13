@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Movie Search App</title>
@@ -9,11 +10,47 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
 </head>
+
 <body>
   <div class="app container-fluid">
+    <!-- MODAL -->
+    <div class="modal fade infoModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- info modal content template -->
+          <div class="mContent">
+            <div class="mTitleDiv">
+              <h1 class="mTitle"></h1>
+            </div>
+            <div class="mInfoDiv">
+              <span class="imgSpan">
+                <img src="" alt="" class="poster">
+              </span>
+              <span class="infoSpan">
+                <h6>Director:</h6>
+                <p class="director"></p>
+                <h6>Released:</h6>
+                <p class="rating"></p>
+                <h6>Rated:</h6>
+                <p class="rating"></p>
+                <h6>Rated:</h6>
+                <p class="rating"></p>
+                <h6>Rated:</h6>
+                <p class="rating"></p>
+              </span>
+            </div>
+          </div>
+          <!-- end modal content template -->
+
+        </div>
+      </div>
+    </div>
+
     <h1>Movie Search</h1>
     <div class="searchArea">
       <div class="sATop">
+        <!-- TODO: reset default values -->
         <input type="text" class="titleInput" placeholder="Title" value="gladiator">
         <input type="text" class="year" placeholder="Year (Optional)" value="2000">
       </div>
@@ -21,7 +58,8 @@
         <span class="bottomLeft">
           <span>Type: </span>
           <select class='typeSelect'>
-            <option value="movie">Movie</option> <!-- TODO: set back to default (optional) -->
+            <option value="movie">Movie</option>
+            <!-- TODO: set back to default (optional) -->
             <option value="none">(Optional)</option>
             <option value="series">Series</option>
             <option value="episode">Episode</option>
@@ -33,8 +71,10 @@
       </div>
     </div>
     <div class="displayArea"></div>
+    <!-- TODO: add functionality for pagination -->
   </div>
 
+  <!-- search result template -->
   <div class="hidden searchResultTemplate text-center resultCard">
     <div class="centerTitle text-center">
       <span class="info title"></span>
@@ -45,4 +85,5 @@
   <div class="hidden specificResultTemplate"></div>
 
 </body>
+
 </html>

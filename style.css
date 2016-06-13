@@ -1,22 +1,35 @@
+body {
+  text-align: center;
+}
+
 .red {
-    color: red;
+  color: red;
 }
 .sABottom {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .bottomRight {
-    margin-left: 32px;
+  margin-left: 32px;
 }
 
 .resultCard {
   border: 1px solid #000;
   display: inline-block;
-  width: 286px;
+  width: 330px;
   height: 57px;
   border-radius: 9px;
   margin: 4px;
+  padding: 6px;
+}
+
+.centerTitle {
+  margin-bottom: 3px;
 }
 
 .title {
-  /* text-align: center; */
+  text-align: center;
+}
+
+.info.type, .info.year {
+  margin: 0px 16px;
 }
