@@ -5,7 +5,6 @@ $(document).ready(init);
 function init() {
   $('.searchButton').click(search);
   $('.displayArea').on('click', '.resultCard', getInfo);
-  $('.infoModal').modal();
 }
 
 function search() {
@@ -62,6 +61,8 @@ function displaySearchResults(data) {
 
 function getInfo() {
   var req = $(this).data('infoRequest');
+  $('.infoModal').modal()
+  $('.modal-content').text("Loading...")
   // TODO: change something to show that data is loading
   sendInfoRequest(req);
   $('.infoModal').modal();
@@ -81,5 +82,29 @@ function sendInfoRequest(req) {
 }
 
 function displayInfoResults(data) {
-  console.log(data);
+  $('.modal-content').empty();
+  var $modal = $('.mContentTemplate').clone();
+  $modal.removeClass('mContentTemplate');
+  var altPoster = 'http://www.moviesnow4u.com/images/default_poster.jpg';
+  if (data.Poster !== "N/A") {
+    $modal.find('.imgDiv').find('img').attr('src', data.Poster);
+  } else {
+    $modal.find('.imgDiv').find('img').attr('src', altPoster);
+  }
+  $modal.find('.mTitle').text(data.Title);
+  $modal.find('.director').text(data.Director);
+  $modal.find('.released').text(data.Released);
+  $modal.find('.actors').text(data.Actors);
+  $modal.find('.awards').text(data.Awards);
+  $modal.find('.language').text(data.Language);
+  $modal.find('.genre').text(data.Genre);
+  $modal.find('.plot').text(data.Plot);
+  $modal.find('.runtime').text(data.Runtime);
+  $modal.find('.production').text(data.Production);
+  $modal.find('.imdbScore').text(data.imdbRating);
+  $modal.find('.metaScore').text(data.MetaScore);
+  $modal.find('.reviewDiv').find('.tomatoesScore').text(data.tomatoRating);
+  console.log(data.tomatoRating)
+
+  $('.modal-content').append($modal);
 }
