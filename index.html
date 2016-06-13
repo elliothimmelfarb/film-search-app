@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="app container-fluid">
+    <h1>Movie Search</h1>
+    <div class="searchArea">
+      <div class="sATop">
+        <input type="text" class="titleInput" placeholder="Title" value="gladiator">
+        <input type="text" class="year" placeholder="Year (Optional)" value="2000">
+      </div>
+      <div class="sABottom">
+        <span class="bottomLeft">
+          <span>Type: </span>
+          <select class='typeSelect'>
+            <option value="movie">Movie</option> <!-- TODO: set back to default (optional) -->
+            <option value="none">(Optional)</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+          </select>
+        </span>
+        <span class="bottomRight">
+          <button class="btn btn-success searchButton">Search</button>
+        </span>
+      </div>
+    </div>
+    <div class="displayArea"></div>
+  </div>
+
+  <div class="hidden searchResultTemplate text-center resultCard">
+    <div class="centerTitle text-center">
+      <span class="info title"></span>
+    </div>
+    <span class="info year"></span>
+    <span class="info type"></span>
+  </div>
+  <div class="hidden specificResultTemplate"></div>
+
+</body>
+</html>

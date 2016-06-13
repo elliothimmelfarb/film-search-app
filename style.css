@@ -1,0 +1,22 @@
+.red {
+    color: red;
+}
+.sABottom {
+    padding-top: 10px;
+}
+.bottomRight {
+    margin-left: 32px;
+}
+
+.resultCard {
+  border: 1px solid #000;
+  display: inline-block;
+  width: 286px;
+  height: 57px;
+  border-radius: 9px;
+  margin: 4px;
+}
+
+.title {
+  /* text-align: center; */
+}
