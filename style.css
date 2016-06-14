@@ -10,7 +10,7 @@ html {
   margin: 37px auto;
   border: 1px solid #000;
   border-radius: 30px;
-  background-color: #313a56;
+  background-color: #2d2a4e;
   min-width: 1000px;
   max-width: 1000px;
   color: rgb(242, 242, 242);
@@ -66,9 +66,15 @@ html {
   border        : 1px solid #000;
   border-radius : 9px;
   background-color: #4d5373;
-  padding       : 6px;
+  padding: 6px;
   width: 449px;
-  height        : 57px;
+  height: 60px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.resultCard:hover {
+  cursor: pointer;
 }
 
 .centerTitle {
@@ -87,7 +93,7 @@ html {
 
 .info.type,
 .info.year {
-  margin : 0px 16px;
+  margin: 0px 48px;
 }
 
 .modal-open .modal {
@@ -97,7 +103,7 @@ html {
 .modal-content.m {
   background-color: #2f3354;
   width: 858px;
-  height: 678px;
+  height: 697px;
 }
 
 .half {
@@ -193,10 +199,18 @@ p {
 }
 
 .paginationDiv {
-  margin-top: 8px;
+  margin-top: 20px;
   margin-bottom: 21px;
 }
+/*
+.customInput {
+  padding: 7px;
+  border-radius: 10px;
+}*/
 
-.reviewTitle {
+.clickBelow {position: relative;right: 28px;margin-top: 5px;}
 
+.line.card {
+  margin-top: -4px;
+  margin-bottom: 5px;
 }

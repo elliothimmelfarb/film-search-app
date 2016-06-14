@@ -12,7 +12,8 @@ function init() {
   $('.app').on('click', '.pageBack', pageBack);
 }
 
-function search() {
+function search(event) {
+  event.preventDefault();
   currentPage = 0;
   localStorage.pages = '[]';
   var title = $('.titleInput').val();

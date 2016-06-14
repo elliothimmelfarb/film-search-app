@@ -25,16 +25,16 @@
 
       <h1 class="fixed">Movie, TV, and Game Search</h1>
       <p></p>
-      <div class="searchArea">
+      <form class="form-inline searchArea">
         <div class="sATop">
           <!-- TODO: reset default values -->
-          <input type="text" class="titleInput" placeholder="Title">
-          <input type="text" class="year" placeholder="Year (Optional)">
+          <input type="text" class="titleInput customInput form-control" placeholder="Title">
+          <input type="text" class="year customInput form-control" placeholder="Year (Optional)">
         </div>
         <div class="sABottom">
           <span class="bottomLeft">
             <span></span>
-            <select class='typeSelect'>
+            <select class='typeSelect form-control'>
               <option value="none">type (optional)</option>
               <option value="movie">Movie</option>
               <option value="series">Series</option>
@@ -43,10 +43,10 @@
             </select>
           </span>
           <span class="bottomRight">
-            <button class="btn btn-success searchButton">Search</button>
+            <button type="submit" class="btn btn-success searchButton">Search</button>
           </span>
         </div>
-      </div>
+      </form>
 
       <div class="line"></div>
 
@@ -77,10 +77,11 @@
   <!-- Here be templates -->
 
   <!-- search result template -->
-  <div class="hidden searchResultTemplate text-center resultCard">
+  <div class="hidden searchResultTemplate text-center resultCard btn-primary">
     <div class="centerTitle text-center">
       <span class="info title ellipsis"></span>
     </div>
+    <div class="line card"></div>
     <span class="info year"></span>
     <span class="info type"></span>
   </div>
@@ -146,6 +147,9 @@
         <img src="http://www.video-juegos.com/wp-content/uploads/2016/01/metacritic-logo.png" class="metacriticImg">
         <h3 class="metaScore"></h3>
       </span>
+      <div>
+        <p class='clickBelow'>Click below to return to search!</p>
+      </div>
     </div>
     <!-- end modal content template -->
 
