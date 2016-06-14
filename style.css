@@ -198,6 +198,10 @@ p {
   border-bottom-color: #465058;
 }
 
+hr {
+  border-color: rgb(165, 180, 208)
+}
+
 .paginationDiv {
   margin-top: 20px;
   margin-bottom: 21px;
