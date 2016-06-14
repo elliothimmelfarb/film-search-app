@@ -16,6 +16,7 @@ function search() {
   currentPage = 0;
   localStorage.pages = '[]';
   var title = $('.titleInput').val();
+  $('.titleInput').val('');
   var year = $('.year').val();
   var type = $('.typeSelect').val()
   if (title) {

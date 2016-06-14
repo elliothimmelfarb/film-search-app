@@ -20,8 +20,14 @@ html {
   background-color: #333439;
 }
 
-.btn-success:hover {
-  color: rgb(102, 161, 204);
+.btn.btn-success {
+  color: #fff;
+  background-color: #50577d;
+  border-color: #202956;
+}
+
+.btn.btn-success:hover {
+  background-color: rgb(102, 161, 204);
 }
 
 .btn-success:focus {
