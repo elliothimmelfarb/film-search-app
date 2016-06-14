@@ -13,62 +13,65 @@
 
 <body>
   <div class="container-fluid">
-    <div class="app">
+    <div class="container">
+      <div class="app container">
 
-      <!-- MODAL -->
-      <div class="modal fade infoModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content m">
+        <!-- MODAL -->
+        <div class="modal fade infoModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content m">
+            </div>
           </div>
         </div>
-      </div>
 
-      <h1 class="fixed">Movie, TV, and Game Search</h1>
-      <p></p>
-      <form class="form-inline searchArea">
-        <div class="sATop">
-          <!-- TODO: reset default values -->
-          <input type="text" class="titleInput customInput form-control" placeholder="Title">
-          <input type="text" class="year customInput form-control" placeholder="Year (Optional)">
-        </div>
-        <div class="sABottom">
-          <span class="bottomLeft">
-            <span></span>
-            <select class='typeSelect form-control'>
-              <option value="none">type (optional)</option>
-              <option value="movie">Movie</option>
-              <option value="series">Series</option>
-              <option value="episode">Episode</option>
-              <option value="game">Game</option>
-            </select>
-          </span>
-          <span class="bottomRight">
-            <button type="submit" class="btn btn-success searchButton">Search</button>
-          </span>
-        </div>
-      </form>
-
-      <div class="line"></div>
-
-      <div class="displayArea"></div>
-
-      <div class="outerPaginationDiv">
-        <span class="pageLoading"></span>
-        <div class="paginationDiv hidden">
-          <div class="buttonSpan">
-            <button class="btn btn-success pageBack">
-              <i class='glyphicon glyphicon-arrow-left'></i>
-            </button>
+        <form class="form-inline searchArea`">
+          <h1 class="fixed">Movie, TV, and Game Search</h1>
+          <p>Interacting with the Open Movie DataBase</p>
+          <div class="sATop">
+            <!-- TODO: reset default values -->
+            <input type="text" class="titleInput customInput form-control" placeholder="Title">
+            <input type="text" class="year customInput form-control" placeholder="Year (Optional)">
           </div>
-          <span class="currentPage"></span>
-          <div class="buttonSpan">
-            <button class="btn btn-success pageNext">
-              <i class='glyphicon glyphicon-arrow-right'></i>
-            </button>
+          <div class="sABottom">
+            <span class="bottomLeft">
+              <span></span>
+              <select class='typeSelect form-control'>
+                <option value="none">type (optional)</option>
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+                <option value="game">Game</option>
+              </select>
+            </span>
+            <span class="bottomRight">
+              <button type="submit" class="btn btn-success searchButton">Search</button>
+            </span>
+          </div>
+        </form>
+
+        <hr>
+
+        <div class="displayArea"></div>
+
+        <div class="outerPaginationDiv">
+          <span class="pageLoading"></span>
+          <div class="paginationDiv hidden">
+            <div class="buttonSpan">
+              <button class="btn btn-success pageBack">
+                <i class='glyphicon glyphicon-arrow-left'></i>
+              </button>
+            </div>
+            <span class="currentPage"></span>
+            <div class="buttonSpan">
+              <button class="btn btn-success pageNext">
+                <i class='glyphicon glyphicon-arrow-right'></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
 
