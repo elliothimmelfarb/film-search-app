@@ -1,93 +1,186 @@
 body {
-  text-align: center;
+  text-align : center;
+}
+
+html {
+  background-color: rgb(51, 52, 57);
+}
+
+.app {
+  color: rgb(242, 242, 242);
+  min-width: 1000px;
+  max-width: 1000px;
+  margin: 37px auto;
+  background-color: #313a56;
+  border-radius: 30px;
+  border: 1px solid #000;
+}
+
+.container-fluid {
+  background-color: #333439;
+}
+
+.btn-success:hover {
+  color: rgb(102, 161, 204);
+}
+
+.btn-success:focus {
+  border: none;
+}
+
+.sATop {
+  color: black;
+}
+
+.displayArea {
+  height: 383px;
+  margin-top: 19px;
 }
 
 .mContentTemplate {
-  display: none;
+  display : none;
 }
+
 .sABottom {
-  padding-top: 10px;
+  padding-top : 10px;
 }
+
 .bottomRight {
-  margin-left: 32px;
+  margin-left : 32px;
 }
 
 .resultCard {
-  border: 1px solid #000;
-  display: inline-block;
-  width: 330px;
-  height: 57px;
-  border-radius: 9px;
-  margin: 4px;
-  padding: 6px;
+  display       : inline-block;
+  width: 449px;
+  height        : 57px;
+  margin: 10px;
+  padding       : 6px;
+  background-color: #454f82;
+  border        : 1px solid #000;
+  border-radius : 9px;
 }
 
 .centerTitle {
-  margin-bottom: 3px;
+  margin-bottom : 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  text-overflow: ellipsis;
 }
 
 .title {
-  text-align: center;
+  text-align : center;
+  width: 10px;
+  font-size: 18px;
 }
 
-.info.type, .info.year {
-  margin: 0px 16px;
+.info.type,
+.info.year {
+  margin : 0px 16px;
 }
 
 .modal-content {
-  height: 651px;
-  width: 940px;
+  width: 858px;
+  height: 678px;
+  background-color: #575b5f;
 }
 
 .half {
-  width: 50%;
-  display: inline-block;
+  display : inline-block;
+  width   : 50%;
 }
 
 .imgDiv {
-  float: left;
+  float : left;
 }
 
 .infoDiv {
-  text-align: left;
-
-  margin-left: -42px;
+  margin-left : -42px;
+  text-align  : left;
 }
 
 img.poster {
-    width: 224px;
-    display: inline-block;
-    margin-left: -7px;
-    margin-top: 11px;
+  display     : inline-block;
+  width       : 236px;
+  margin-top  : 4px;
+  margin-left : -7px;
 }
 
 .reviewImg {
-  height: 53px;
+  height : 53px;
 }
 
 .metacriticImg {
-  height: 45px;
+  height : 45px;
 }
 
 .tomatoesImg {
-  height: 46px;
+  height : 46px;
 }
 
 .reviewSpan {
-  display: inline-block;
-  margin: 0px 25px;
+  display : inline-block;
+  margin  : 0px 50px;
 }
 
 .infoBlock h4 {
-  margin-bottom: 0px;
-  margin-top: 1px;
-  text-decoration: underline;
+  margin-top      : 1px;
+  margin-bottom   : 0px;
+  text-decoration : underline;
 }
 
 h4 {
-  margin-right: 9px;
+  margin-right : 9px;
 }
 
-h4, p {
+h4,
+p {
+  display : inline-block;
+}
+
+.reviewTitle {
+  margin-right  : 47px;
+  margin-bottom : 28px;
+}
+
+.currentPage {
+  position  : relative;
+  top       : 4px;
+  font-size : 25px;
+}
+
+.bottomLeft {
+  position  : relative;
+  right     : 24px;
+  font-size : 16px;
+}
+
+.searchButton {
+  position: relative;
+  right: 9px;
+}
+
+.buttonSpan {
   display: inline-block;
+  height: 34px;
+  width: 40px;
+  margin-top: -7px;
+}
+
+.picImgDiv {
+  height: 407px;
+}
+
+.line {
+  border-bottom: 1px solid #ccc;
+  margin-top: 13px;
+}
+
+.paginationDiv {
+  margin-bottom: 21px;
+  margin-top: 8px;
+}
+
+.reviewTitle {
+
 }

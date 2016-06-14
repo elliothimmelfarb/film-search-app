@@ -12,46 +12,72 @@
 </head>
 
 <body>
-  <div class="app container-fluid">
-    <!-- MODAL -->
-    <div class="modal fade infoModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+  <div class="container-fluid">
+    <div class="app">
+
+      <!-- MODAL -->
+      <div class="modal fade infoModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+          </div>
+        </div>
+      </div>
+
+      <h1 class="fixed">Movie Search</h1>
+      <div class="searchArea">
+        <div class="sATop">
+          <!-- TODO: reset default values -->
+          <input type="text" class="titleInput" placeholder="Title" value="harry potter">
+          <input type="text" class="year" placeholder="Year (Optional)">
+        </div>
+        <div class="sABottom">
+          <span class="bottomLeft">
+            <span></span>
+            <select class='typeSelect'>
+              <option value="none">type (optional)</option>
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+              <option value="episode">Episode</option>
+            </select>
+          </span>
+          <span class="bottomRight">
+            <button class="btn btn-success searchButton">Search</button>
+          </span>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="displayArea"></div>
+
+      <div class="outerPaginationDiv">
+        <span class="pageLoading"></span>
+        <div class="paginationDiv hidden">
+          <div class="buttonSpan">
+            <button class="btn btn-success pageBack">
+              <i class='glyphicon glyphicon-arrow-left'></i>
+            </button>
+          </div>
+          <span class="currentPage"></span>
+          <div class="buttonSpan">
+            <button class="btn btn-success pageNext">
+              <i class='glyphicon glyphicon-arrow-right'></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-
-    <h1 class="fixed">Movie Search</h1>
-    <div class="searchArea">
-      <div class="sATop">
-        <!-- TODO: reset default values -->
-        <input type="text" class="titleInput" placeholder="Title" value="gladiator">
-        <input type="text" class="year" placeholder="Year (Optional)" value="2000">
-      </div>
-      <div class="sABottom">
-        <span class="bottomLeft">
-          <span>Type: </span>
-          <select class='typeSelect'>
-            <option value="movie">Movie</option>
-            <!-- TODO: set back to default (optional) -->
-            <option value="none">(Optional)</option>
-            <option value="series">Series</option>
-            <option value="episode">Episode</option>
-          </select>
-        </span>
-        <span class="bottomRight">
-          <button class="btn btn-success searchButton">Search</button>
-        </span>
-      </div>
-    </div>
-    <div class="displayArea"></div>
-    <!-- TODO: add functionality for pagination -->
   </div>
+
+
+
+
+  <!-- Here be templates -->
 
   <!-- search result template -->
   <div class="hidden searchResultTemplate text-center resultCard">
     <div class="centerTitle text-center">
-      <span class="info title"></span>
+      <span class="info title ellipsis"></span>
     </div>
     <span class="info year"></span>
     <span class="info type"></span>
@@ -104,7 +130,7 @@
         </div>
       </div>
     </div>
-    <h2>Review Scores:</h2>
+    <h2 class="reviewTitle">Review Scores:</h2>
     <div class="reviewDiv">
       <span class="reviewSpan">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/IMDb_logo.svg/200px-IMDb_logo.svg.png" class="reviewImg">
@@ -112,15 +138,15 @@
       </span>
       <span class="reviewSpan">
         <img src="https://d2a5cgar23scu2.cloudfront.net/static/images/logos/rtlogo.png" class="tomatoesImg">
-        <h3 class="metaScore"></h3>
+        <h3 class="tomatoesScore"></h3>
       </span>
       <span class="reviewSpan">
         <img src="http://www.video-juegos.com/wp-content/uploads/2016/01/metacritic-logo.png" class="metacriticImg">
-        <h3 class="tomatoesScore"></h3>
+        <h3 class="metaScore"></h3>
       </span>
     </div>
     <!-- end modal content template -->
 
-</body>
+  </body>
 
-</html>
+  </html>
